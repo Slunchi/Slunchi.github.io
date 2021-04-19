@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a class= megagrid>
+
+        <!-- input text -->
+        <div class= leftcolumn>
+            <h1 class= 'logo reload' onClick= "document.getElementById('top').scrollIntoView(); window.location.reload();">MAX!</h1>
+            <div class= controls>
+                <label for="name">Input text:</label>
+                <input type="text" id="x" name="name" size=auto value=''>
+                <button onclick="setWord()">Set</button>
+                <label for="colorWell">Color:</label>
+                <input class= colorWell type="color" id="colorWell">
+                <button class=reload onClick="window.location.reload();">Random</button>
+            </div>
+        </div>
+
+        <div class= middlecolumn id= 'top' onClick= "document.getElementById('middle').scrollIntoView();">
+
+                <c>
+                    
+                    <div class= gridcontainer>
+                        
+                
+                        <!-- first shell -->
+
+                        <div class= item1><marquee>
+                            <div id='word'></div>
+                        </marquee></div>
+
+                        <div class= item2><marquee direction = down height= 100%>
+                            <div id='word1'></div>
+                        </marquee></div>
+
+                        <div class= item3><marquee direction = right>
+                            <div id='word2'></div>
+                        </marquee></div>
+
+                        <div class= item4><marquee direction = up height= 100%>
+                            <div id='word3'></div>
+                        </marquee></div>
+
+
+                        <!-- seccond shell -->
+
+                        <div class= item5><marquee >
+                            <div id='word4'></div>
+                        </marquee></div>
+
+                        <div class= item6><marquee direction = down height= 100%>
+                            <div id='word5'></div>
+                        </marquee></div>
+                        
+                        <div class= item7><marquee direction = right >
+                            <div id='word6'></div>
+                        </marquee></div>
+
+                        <div class= item8><marquee direction = up height= 100%>
+                            <div id='word7'></div>
+                        </marquee></div>
+
+
+                        <!-- third shell -->
+
+                        <div class= item9><marquee >
+                            <div id='word8'></div>
+                        </marquee></div>
+
+                        <div class= item10><marquee direction = down height= 100%>
+                            <div id='word9'></div>
+                        </marquee></div>
+                        
+                        <div class= item11><marquee direction = right >
+                            <div id='word10'></div>
+                        </marquee></div>
+
+                        <div class= item12><marquee direction = up height= 100%>
+                            <div id='word11'></div>
+                        </marquee></div>
+
+
+                        <!-- fourth shell -->
+
+                        <div class= item13><marquee >
+                            <div id='word12'></div>
+                        </marquee></div>
+
+                        <div class= item14><marquee direction = down height= 100%>
+                            <div id='word13'></div>
+                        </marquee></div>
+                        
+                        <div class= item15><marquee direction = right >
+                            <div id='word14'></div>
+                        </marquee></div>
+
+                        <div class= item16><marquee direction = up height= 100%>
+                            <div id='word15'></div>
+                        </marquee></div>
+
+
+                        <!-- fifth shell -->
+
+                        <div class= item17><marquee >
+                            <div id='word16'></div>
+                        </marquee></div>
+
+                        <div class= item18><marquee direction = down height= 100%>
+                            <div id='word17'></div>
+                        </marquee></div>
+                        
+                        <div class= item19><marquee direction = right >
+                            <div id='word18'></div>
+                        </marquee></div>
+
+                        <div class= item20><marquee direction = up height= 100%>
+                            <div id='word19'></div>
+                        </marquee></div>
+
+
+                        <!-- sixth shell -->
+
+                        <div class= item21><marquee >
+                            <div id='word20'></div>
+                        </marquee></div>
+
+                        <div class= item22><marquee direction = down height= 100%>
+                            <div id='word21'></div>
+                        </marquee></div>
+                        
+                        <div class= item23><marquee direction = right >
+                            <div id='word22'></div>
+                        </marquee></div>
+
+                        <div class= item24><marquee direction = up height= 100%>
+                            <div id='word23'></div>
+                        </marquee></div>
+
+
+                        <!-- seventh shell -->
+
+                        <div class= item25><marquee >
+                            <div id='word24'></div>
+                        </marquee></div>
+
+                        <div class= item26><marquee direction = down height= 100%>
+                            <div id='word25'></div>
+                        </marquee></div>
+                        
+                        <div class= item27><marquee direction = right >
+                            <div id='word26'></div>
+                        </marquee></div>
+
+                        <div class= item28><marquee direction = up height= 100%>
+                            <div id='word27'></div>
+                        </marquee></div>
+
+
+                        <!-- eith shell -->
+
+                        <div class= item29><marquee >
+                            <div id='word28'></div>
+                        </marquee></div>
+
+                        <div class= item30><marquee direction = down height= 100%>
+                            <div id='word29'></div>
+                        </marquee></div>
+                        
+                        <div class= item31><marquee direction = right >
+                            <div id='word30'></div>
+                        </marquee></div>
+
+                        <div class= item32><marquee direction = up height= 100%>
+                            <div id='word31'></div>
+                        </marquee></div>
+
+
+                        <!-- Nineth shell -->
+
+                        <div class= item33><marquee >
+                            <div id='word32'></div>
+                        </marquee></div>
+
+                        <div class= item34><marquee direction = down height= 100%>
+                            <div id='word33'></div>
+                        </marquee></div>
+                        
+                        <div class= item35><marquee direction = right >
+                            <div id='word34'></div>
+                        </marquee></div>
+
+                        <div class= item36><marquee direction = up height= 100%>
+                            <div id='word35'></div>
+                        </marquee></div>
+
+
+                        <!-- Middle shell -->
+
+                        <div class= item37><marquee >
+                            <div id='word36'></div>
+                        </marquee></div>
+                        
+                        <!-- Change 'x' to change word-->
+                        <script>
+                            var x = '????????????'
+
+                            document.getElementById("word").innerHTML = x;
+                            document.getElementById("word1").innerHTML = x;
+                            document.getElementById("word2").innerHTML = x;
+                            document.getElementById("word3").innerHTML = x;
+                            document.getElementById("word4").innerHTML = x;
+                            document.getElementById("word5").innerHTML = x;
+                            document.getElementById("word6").innerHTML = x;
+                            document.getElementById("word7").innerHTML = x;
+                            document.getElementById("word8").innerHTML = x;
+                            document.getElementById("word9").innerHTML = x;
+                            document.getElementById("word10").innerHTML = x;
+                            document.getElementById("word11").innerHTML = x;
+                            document.getElementById("word12").innerHTML = x;
+                            document.getElementById("word13").innerHTML = x;
+                            document.getElementById("word14").innerHTML = x;
+                            document.getElementById("word15").innerHTML = x;
+                            document.getElementById("word16").innerHTML = x;
+                            document.getElementById("word17").innerHTML = x;
+                            document.getElementById("word18").innerHTML = x;
+                            document.getElementById("word19").innerHTML = x;
+                            document.getElementById("word20").innerHTML = x;
+                            document.getElementById("word21").innerHTML = x;
+                            document.getElementById("word22").innerHTML = x;
+                            document.getElementById("word23").innerHTML = x;
+                            document.getElementById("word24").innerHTML = x;
+                            document.getElementById("word25").innerHTML = x;
+                            document.getElementById("word26").innerHTML = x;
+                            document.getElementById("word27").innerHTML = x;
+                            document.getElementById("word28").innerHTML = x;
+                            document.getElementById("word29").innerHTML = x;
+                            document.getElementById("word30").innerHTML = x;
+                            document.getElementById("word31").innerHTML = x;
+                            document.getElementById("word32").innerHTML = x;
+                            document.getElementById("word33").innerHTML = x;
+                            document.getElementById("word34").innerHTML = x;
+                            document.getElementById("word35").innerHTML = x;
+                            document.getElementById("word36").innerHTML = x;
+                            x = ''
+                            function setWord(x = '????????????'){
+                                if (document.getElementById("x").value.toUpperCase() && x != 'PORTFOLIO-->'){
+                                    x = document.getElementById("x").value.toUpperCase();
+                                }
+                                document.getElementById("word").innerHTML = x;
+                                document.getElementById("word1").innerHTML = x;
+                                document.getElementById("word2").innerHTML = x;
+                                document.getElementById("word3").innerHTML = x;
+                                document.getElementById("word4").innerHTML = x;
+                                document.getElementById("word5").innerHTML = x;
+                                document.getElementById("word6").innerHTML = x;
+                                document.getElementById("word7").innerHTML = x;
+                                document.getElementById("word8").innerHTML = x;
+                                document.getElementById("word9").innerHTML = x;
+                                document.getElementById("word10").innerHTML = x;
+                                document.getElementById("word11").innerHTML = x;
+                                document.getElementById("word12").innerHTML = x;
+                                document.getElementById("word13").innerHTML = x;
+                                document.getElementById("word14").innerHTML = x;
+                                document.getElementById("word15").innerHTML = x;
+                                document.getElementById("word16").innerHTML = x;
+                                document.getElementById("word17").innerHTML = x;
+                                document.getElementById("word18").innerHTML = x;
+                                document.getElementById("word19").innerHTML = x;
+                                document.getElementById("word20").innerHTML = x;
+                                document.getElementById("word21").innerHTML = x;
+                                document.getElementById("word22").innerHTML = x;
+                                document.getElementById("word23").innerHTML = x;
+                                document.getElementById("word24").innerHTML = x;
+                                document.getElementById("word25").innerHTML = x;
+                                document.getElementById("word26").innerHTML = x;
+                                document.getElementById("word27").innerHTML = x;
+                                document.getElementById("word28").innerHTML = x;
+                                document.getElementById("word29").innerHTML = x;
+                                document.getElementById("word30").innerHTML = x;
+                                document.getElementById("word31").innerHTML = x;
+                                document.getElementById("word32").innerHTML = x;
+                                document.getElementById("word33").innerHTML = x;
+                                document.getElementById("word34").innerHTML = x;
+                                document.getElementById("word35").innerHTML = x;
+                                document.getElementById("word36").innerHTML = x;
+                            }
+                        
+
+                            //color selector and color randomization
+                            var colorWell;
+                            var defaultColor = '#' + Math.floor(Math.random()*16777215).toString(16);;
+                            var c = document.querySelector("c");
+                            var h = document.querySelector("h1")
+                            c.style.color = defaultColor
+                            h.style.color = defaultColor
+                            window.addEventListener("load", startup, false); 
+                            
+                            function startup() {
+                                colorWell = document.querySelector("#colorWell");
+                                colorWell.value = defaultColor;
+                                colorWell.addEventListener("input", updateFirst, false);
+                                colorWell.addEventListener("change", updateAll, false);
+                                colorWell.select();
+                            }
+
+                            function updateFirst(event) {
+                                if (c) {
+                                    c.style.color = event.target.value;
+                                }
+                                if (h) {
+                                    h.style.color = event.target.value;
+                                }
+                            }
+                            function updateAll(event) {
+                                document.querySelectorAll("c").forEach(function(c) {
+                                c.style.color = event.target.value;
+                                });
+                                document.querySelectorAll("h").forEach(function(h) {
+                                h.style.color = event.target.value;
+                                });
+                            } 
+                            var spinner = document.querySelector('c');
+
+                            spinner.addEventListener('mouseover', changeDefOver);
+                            spinner.addEventListener('mouseout', changeDefOut);
+
+                            function changeDefOver(e) {
+                                setWord('PORTFOLIO-->');
+                            }
+
+                            function changeDefOut(e) {
+                                setWord();
+                            }
+                        </script>
+
+                    </div>
+
+                </c>
+
+            </button>
+
+        </div>     
+
+    </a>
+
+    <a id="middle">
+        <div class= navgrid>
+
+        </div>
+    </a>
+
+</body>
+
+</html>
