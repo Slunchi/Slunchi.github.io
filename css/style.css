@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
 .megagrid {
     display: grid;
     grid-template-columns: auto 100vh auto;
@@ -15,22 +16,72 @@ body a {
 }
 
 .leftcolumn {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'JetBrains Mono', monospace;
     margin-top: 0;
+    grid-column: 1;
+    position:absolute;
 }
 
 .controls {
-    position: relative;
-    transform: translateY(20vh);
+    position: fixed;
+    display: block;
+    transform: translateY(15vh);
     z-index: 0;
     width: 15vw;
 }
 
-label {
-    display: block;
-    font: 5vh;
+.controls h1{
+    font-size: 5vh
 }
 
+.controls h2{
+    font-size: 3vh
+}
+
+.contols label {
+    font-size: 2vh;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 2vw;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 2vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2vh;
+    width: 2vh;
+    background-color: #d1d1d1;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: rgb(170, 169, 169);
+}
+
+/* When the radio button is checked, add a black background */
+.container input:checked ~ .checkmark {
+    background-color: #000000;
+}
 
 input{
     text-transform:uppercase;
@@ -61,6 +112,7 @@ button:hover{
     transform: translateY(-11vh);
     width: 15vw;
     height: 16vh;
+    color: cornflowerblue
 }
 
 .logo:hover{
@@ -103,6 +155,7 @@ button:hover{
     z-index: 2;
     grid-template-columns: 10vh 9vh 8vh 7vh 6vh 5vh 3vh 1vh .75vh .5vh .75vh 1vh 3vh 5vh 6vh 7vh 8vh 9vh 10vh 100%;
     grid-template-rows: 10vh 9vh 8vh 7vh 6vh 5vh 3vh 1vh .75vh .5vh .75vh 1vh 3vh 5vh 6vh 7vh 8vh 9vh 10vh 100%;
+    transform: scale(auto);
     
 }
 
@@ -457,55 +510,93 @@ button:hover{
         font-size: 0.15vh;
     }
 
-div#first {
-    color: white;
-    font-family: 'Odibee Sans';
-}
-
-.navgrid {
+.displaygrid {
     display:grid ;
-    grid-template-columns: 10vw auto auto auto auto auto auto 10vw;
-    grid-template-rows: 30% auto;
-    height: 100vh
+    grid-template-columns: 15vw auto;
+    grid-template-rows: 15vh auto;
+    font-family: 'JetBrains Mono', monospace;
 }
 
-.navgrid img {
-    width: 25vh;
-    cursor: pointer;
-}
+    .side {
+        grid-column: 1;
+        grid-row-start: 2;
+    }
+    
+    .side .content{
+        position: fixed;
+        display: block;
+        width: 15vw;
+    }
+    .side h1{
+        font-size: 5vh
+    }
+    
+    .side h2{
+        font-size: 3vh
+    }
+    .side a{
+        color: cornflowerblue;
+        cursor: pointer;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 3vh
+    }
 
-.nav1 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row: 2;
+.imagegrid{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display:grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: auto auto auto;
+    background-color: white;
 }
+    .imagegrid img{
+        width: 40vh;
+        height: 40vh;
+        transform: scale(auto);
+        margin: 5vh;
+        cursor: pointer
+    }
 
-.nav2 {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row: 2;
-}   
+    .imagegrid img:hover{
+        transform: translateX(5px);
+        transform: translateY(5px);
+        border-radius: 10%;
+    }
 
-.nav3 {
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row: 2;
-}
+    .displaygrid iframe{
+        position: relative;
+        width: 30vw;
+        height: 100vh;
+        grid-row: 1;
+        grid-column: 2;
+        transform:translateY(-10vh);
+        transform: translateX(5vw);
+        z-index: 0;
+    }
 
-.nav4 {
-    grid-column-start: 5;
-    grid-column-end: 5;
-    grid-row: 2;
-}
+    .right{
+       margin-top: 0;
+       grid-column: 3;
+       z-index: 100;
+    }
+    .right .content{
+        position: fixed;
+        display: block;
+        width: 40vw;
+        margin-top: 16vh;
+        transform: translateX(-20vw)
+    }
 
-.nav5 {
-    grid-column-start: 6;
-    grid-column-end: 6;
-    grid-row: 2;
-}
+    .right h1{
+        font-size: 5vh
+    }
+    .right p{
+        font-size: 2vh;
+    }
 
-.nav6 {
-    grid-column-start: 7;
-    grid-column-end: 7;
-    grid-row: 2;
-}
+    .right a{
+        color: cornflowerblue;
+        cursor: pointer;
+        font-family: 'JetBrains Mono', monospace;
+    }

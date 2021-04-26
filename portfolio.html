@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="icon" href="images/mb.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script type = "text/javascript" src= "script.js"></script>
+</head>
+<body>
+    <div class= displaygrid>
+        <h1 class= logo onClick= 'window.location = "index.html"'>MAX!</h1>
+        <!-- left column-->
+        <div class= side>
+            <div class= content>
+                <div class= "title">
+                    <h1>Portfolio</h1>
+                </div>
+                <h2>See<img src="images/eye.png" alt="eye" width=30vh height=30vh><img src="images/eye.png" alt="eye" width=30vh height=30vh>:</h2>
+                <label class="container">All
+                    <input class="category" type="radio" checked="checked" name="radio" value= 'all' onclick= setCategory()>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Web
+                    <input class="category" type="radio" name="radio" value= 'web' onclick= setCategory()>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Print
+                    <input  class="category" type="radio" name="radio" value= 'print' onclick= setCategory()>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class= "imagegrid">
+        </div>  
+    </div>
+    
+    <script>setCategory()</script>
+</body>
